@@ -1,4 +1,4 @@
-﻿### 📊 Player Ranking Calculator
+﻿# 📊 Player Ranking Calculator
 
 ## Een relationeel ranking-algoritme voor games, competities en simulaties
 
@@ -10,7 +10,7 @@ Bijvoorbeeld:
 - Als A wint van B, en B wint van C, dan krijgt A ook indirect krediet ten opzichte van C.
 - Het algoritme berekent deze relaties volledig automatisch, normaliseert scores en bepaalt uiteindelijke ranks.
 
-### ✨ Features
+# ✨ Features
 
 ✔️ Directe scores op basis van onderlinge wedstrijden
 
@@ -24,7 +24,7 @@ Bijvoorbeeld:
 
 ✔️ Geschikt voor simulaties, toernooien, AI-bots of matchmaking
 
-### 🔧 Hoe werkt het?
+# 🔧 Hoe werkt het?
 
 Voor iedere speler wordt een subscore berekend tegen alle andere spelers:
 
@@ -53,7 +53,7 @@ Per speler worden alle subscores geschaald, zodat extremen eerlijk worden uitges
 - Spelers worden gesorteerd van hoog naar laag.
 - Gelijke scores krijgen dezelfde rank.
 
-### 📦 Interfaces
+# 📦 Interfaces
 ## IPlayer
 
 Bevat ID, Score, Rank en RankDate.
@@ -70,7 +70,7 @@ De hoofdklasse die:
 - normaliseert,
 - ranks bepaalt.
 
-### 🧠 Waarom dit algoritme?
+# 🧠 Waarom dit algoritme?
 
 In veel competities is niet iedereen op dezelfde manier verbonden.
 Dit algoritme vangt dat op door:
@@ -88,7 +88,7 @@ Het is vooral handig voor:
 - leaderboard systemen waar eerlijkheid belangrijk is
 - correlatie-analyse tussen entiteiten (niet alleen spelers)
 
-### ▶️ Gebruik
+# ▶️ Gebruik
 
 	var calculator = new Calculator(players, games);
 	calculator.Calculate();
